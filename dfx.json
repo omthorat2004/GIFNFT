@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "GIF_backend": {
+      "main": "src/GIF_backend/main.mo",
+      "type": "motoko"
+    },
+    "GIF_frontend": {
+      "dependencies": [
+        "GIF_backend"
+      ],
+      "source": [
+        "src/GIF_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "GIF_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
